@@ -11,9 +11,9 @@
 		EC045ADC1BBC86B1008B8259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC045ADB1BBC86B1008B8259 /* main.m */; };
 		EC045ADE1BBC86B1008B8259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC045ADD1BBC86B1008B8259 /* Assets.xcassets */; };
 		EC045AE11BBC86B1008B8259 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC045ADF1BBC86B1008B8259 /* MainMenu.xib */; };
-		EC045AEB1BBC9294008B8259 /* PMProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = EC045AEA1BBC9294008B8259 /* PMProfile.m */; settings = {ASSET_TAGS = (); }; };
-		EC045AEF1BBC9443008B8259 /* PMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC045AED1BBC9443008B8259 /* PMWindowController.m */; settings = {ASSET_TAGS = (); }; };
-		EC045AF01BBC9443008B8259 /* PMWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC045AEE1BBC9443008B8259 /* PMWindowController.xib */; settings = {ASSET_TAGS = (); }; };
+		EC045AEB1BBC9294008B8259 /* PMProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = EC045AEA1BBC9294008B8259 /* PMProfile.m */; };
+		EC045AEF1BBC9443008B8259 /* PMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC045AED1BBC9443008B8259 /* PMWindowController.m */; };
+		EC045AF01BBC9443008B8259 /* PMWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC045AEE1BBC9443008B8259 /* PMWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,7 +110,7 @@
 		EC045ACC1BBC86B1008B8259 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Hipo;
 				TargetAttributes = {
 					EC045AD31BBC86B1008B8259 = {
@@ -189,8 +189,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -232,8 +234,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
