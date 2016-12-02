@@ -228,6 +228,34 @@ static NSString * const PMProfileCellIdentifier = @"PMProfileCell";
     [_deleteButton setEnabled:NO];
 }
 
+- (IBAction)didTapExportButton:(id)sender {
+    NSArray *selectedObjects = [_contentController selectedObjects];
+    
+    if (selectedObjects.count == 0) {
+        return;
+    }
+    
+    NSURL *directoryURL = [self getDirectoryURL];
+    if (directoryURL) {
+        for (PMProfile *profile in selectedObjects) {
+            NSURL *newFileURL = [directoryURL URLByAppendingPathComponent:profile.fileURL.lastPathComponent];
+            [[NSFileManager defaultManager] copyItemAtURL:profile.fileURL toURL:newFileURL error:nil];
+        }
+    }
+}
+
+- (NSURL *)getDirectoryURL {
+    NSOpenPanel *panel = [NSOpenPanel openPanel];
+    
+    [panel setAllowsMultipleSelection:NO];
+    [panel setCanChooseDirectories:YES];
+    [panel setCanCreateDirectories:YES];
+    [panel setCanChooseFiles:NO];
+    
+    BOOL ok = ([panel runModal] == NSFileHandlingPanelOKButton);
+    return ok ? [[panel URLs] lastObject] : nil;
+}
+
 - (void)didTapReloadButton:(id)sender {
     [self reloadAllProfiles];
 }
